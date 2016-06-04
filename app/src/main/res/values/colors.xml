@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color1">#f44336</color>
+    <color name="color2">#9c27b0</color>
+    <color name="color3">#2196f3</color>
+    <color name="color4">#00bcd4</color>
+    <color name="color5">#4caf50</color>
+
+
+    <color name="income">#4caf50</color>
+    <color name="expense">#f44336</color>
+    <color name="recurrence">#009688</color>
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="45dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="beta.com.android17.onevault.Accounts.Add_Account"
+    tools:showIn="@layout/add_account">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView" android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" android:layout_alignParentTop="true">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:gravity="start"
+                app:met_floatingLabel="highlight"
+                android:ems="10"
+                android:hint="@string/acc_name"
+                android:id="@+id/acc_name"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="57dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:gravity="start"
+                android:hint="@string/acc_desc"
+                app:met_floatingLabel="highlight"
+                android:ems="10"
+                android:id="@+id/acc_dec" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                app:ms_hint = "Select Base Currency"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelText="Base Currency"
+                android:ems="10"
+                android:layout_marginTop="114dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:id="@+id/spin_currency" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/acc_init"
+                android:layout_marginTop="190dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:id="@+id/acc_init"
+                android:gravity="right"
+                android:ems="10"
+                android:inputType="numberDecimal"/>
+
+            <RadioButton
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/acc_hascc"
+                android:layout_marginTop="245dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:gravity="start"
+                android:ems="10"
+                android:id="@+id/acc_hascc" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+                android:hint="@string/acc_limit"
+                android:ems="10"
+                android:gravity="start"
+                android:layout_marginTop="280dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:id="@+id/acc_limit" android:inputType="numberDecimal" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

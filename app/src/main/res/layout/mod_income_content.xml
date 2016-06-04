@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="45dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="beta.com.android17.onevault.Income.Mod_Income"
+    tools:showIn="@layout/mod_income">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView" android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:gravity="start"
+                app:met_floatingLabel="highlight"
+                android:ems="10"
+
+                android:hint="Payment Date"
+                android:id="@+id/field_date"
+
+                android:inputType="datetime"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="57dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:gravity="start"
+                app:met_floatingLabel="highlight"
+                android:ems="10"
+                android:hint="@string/text_amount"
+                android:id="@+id/field_amount" android:inputType="numberDecimal" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                app:met_floatingLabel="highlight"
+                android:ems="10"
+                android:layout_marginTop="114dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:id="@+id/field_payee"
+                android:hint="@string/payee"/>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="171dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:id="@+id/spin_category"
+                android:ems="10"
+                app:ms_hint = "Select Transaction Category"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelText="Category"
+                android:gravity="start" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spin_paymethod"
+                android:layout_marginTop="235dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:gravity="start"
+                android:ems="10"
+                app:ms_hint = "Select Payment Method"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelText="Payment Method"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+                android:hint="@string/ref_chck"
+                android:ems="10"
+                android:gravity="start"
+                android:layout_marginTop="300dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:id="@+id/field_ref" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spin_status"
+                app:ms_hint = "Select Transaction Status"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelText="Status"
+                android:layout_marginTop="347dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:gravity="start" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+                android:hint="@string/description"
+                android:ems="10"
+                android:id="@+id/field_desc"
+                android:layout_marginTop="415dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:gravity="start" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spin_tags"
+                app:ms_hint = "Transaction Tags"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelText="Tags"
+                android:layout_marginTop="460dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:gravity="start" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+                android:hint="@string/text_tax"
+                android:ems="10"
+                android:layout_marginTop="530dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:id="@+id/field_tax"
+                android:gravity="start" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+                android:ems="10"
+                android:layout_marginTop="585dp" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginStart="20dp"
+                android:id="@+id/field_quantity"
+                android:hint="@string/text_quantity"
+                android:gravity="start" android:inputType="numberDecimal"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
